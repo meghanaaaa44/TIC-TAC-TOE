@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styleshe.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <header>
+    <div class="container_header">
+      <div class="left">
+        <h3 id="play_1">PLAYER 1</h3>
+        <p class="part1">SCORE <p id="1"></p>
+        <p class="part1">HIGHSCORE <p id="high1"></p>
+      </div>
+      <div class="right">
+        <h3 id="play_2">PLAYER 2</h3>
+        <p class="part2">SCORE <p id="2" ></p>
+        <p class="part2">HIGHSCORE <p id="high2"></p>
+      </div>
+    </div>
+  </header>
+   <div class="container">
+     <h1>TIC-TAC-TOE</h1>
+     <div class="play-area">
+       <div id="block_0" class="block"></div>
+       <div id="block_1" class="block"></div>
+       <div id="block_2" class="block"></div>
+       <div id="block_3" class="block"></div>
+       <div id="block_4" class="block"></div>
+       <div id="block_5" class="block"></div>
+       <div id="block_6" class="block"></div>
+       <div id="block_7" class="block"></div>
+       <div id="block_8" class="block"></div>
+     </div>
+     <button class="button_board" onclick="reset_board()" title=" Resets the board to start a new game. ">RESET BOARD</button>
+     <button class="button_reset" onclick="reset_score()" title=" Resets the scores. ">RESET SCORE</button>
+     <button id="ok" onclick="no_of_players()">1 PLAYER</button>
+     <button class="button_level" id="mode" onclick="computer_level()" title=" EASY: Computer may be defeated. HARD: Computer can NEVER be defeated. ">EASY</button>
+     <h2 id="winner"></h2>
+   </div>
+   <script src="tic.js"></script>
+  </body>
+</html>
